@@ -5,8 +5,8 @@ class PickLine extends React.Component {
     super(props);
     this.state = {
       name: props.name,
-      unSyncedNumber: ""
-      syncedNumber: ""
+      unSyncedNumber: "",
+      syncedNumber: "",
     }
   }
 
@@ -22,25 +22,24 @@ class PickLine extends React.Component {
     return (
       <div className="line-window">
         <h2 className="line-name">{ this.state.name + ":" }</h2>
-        <textarea
-          className="line-number"
-          onChange={this.updateUnsyncedNumber}
-          value={this.state.unSyncedNumber}
-          placeholder={this.state.name}
-          rows="1"
-        >
-        </textarea>
-        <textarea
-          className="line-number"
-          onChange={this.updateSyncedNumber}
-          value={this.state.syncedNumber}
-          placeholder={this.state.name}
-          rows="1"
-        >
-        </textarea>
-        <p className="description">
-          Write the numbers of two rows of subtitles that should be at the same time, one from the unsynced subs, and the other from the synced subs
-        </p>
+        <div className="line-pick-box">
+          <textarea
+            className="line-input"
+            onChange={this.updateUnsyncedNumber}
+            value={this.state.unSyncedNumber}
+            placeholder="unsynced line number"
+            rows="1"
+          >
+          </textarea>
+          <textarea
+            className="line-input"
+            onChange={this.updateSyncedNumber}
+            value={this.state.syncedNumber}
+            placeholder="synced line number"
+            rows="1"
+          >
+          </textarea>
+        </div>
       </div>
     )
   }
