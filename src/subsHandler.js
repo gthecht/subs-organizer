@@ -1,10 +1,6 @@
 import React from 'react';
 
 class SubsHandler extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   updateText = (event) => {
     this.props.changeFunction(event)
   }

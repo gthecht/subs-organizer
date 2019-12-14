@@ -1,32 +1,23 @@
 import React from 'react';
 
 class PickLine extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: props.name,
-      unSyncedNumber: "",
-      syncedNumber: "",
-    }
-  }
-
   updateUnsyncedNumber = (event) => {
-    this.setState({ unSyncedNumber: event.target.value });
+    this.props.changeFunction("unsync", event)
   }
 
   updateSyncedNumber = (event) => {
-    this.setState({ syncedNumber: event.target.value });
+    this.props.changeFunction("sync", event)
   }
 
   render() {
     return (
       <div className="line-window">
-        <h2 className="line-name">{ this.state.name + ":" }</h2>
+        <h2 className="line-name">{ this.props.name + ":" }</h2>
         <div className="line-pick-box">
           <textarea
             className="line-input"
             onChange={this.updateUnsyncedNumber}
-            value={this.state.unSyncedNumber}
+            value={this.props.unSyncedNumber}
             placeholder="unsynced line number"
             rows="1"
           >
@@ -34,7 +25,7 @@ class PickLine extends React.Component {
           <textarea
             className="line-input"
             onChange={this.updateSyncedNumber}
-            value={this.state.syncedNumber}
+            value={this.props.syncedNumber}
             placeholder="synced line number"
             rows="1"
           >
