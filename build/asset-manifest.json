@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gthecht/subs-organizer/static/css/main.e73ff761.chunk.css",
+    "main.js": "/gthecht/subs-organizer/static/js/main.02740d3c.chunk.js",
+    "main.js.map": "/gthecht/subs-organizer/static/js/main.02740d3c.chunk.js.map",
+    "runtime-main.js": "/gthecht/subs-organizer/static/js/runtime-main.daa7342e.js",
+    "runtime-main.js.map": "/gthecht/subs-organizer/static/js/runtime-main.daa7342e.js.map",
+    "static/js/2.a0ef5732.chunk.js": "/gthecht/subs-organizer/static/js/2.a0ef5732.chunk.js",
+    "static/js/2.a0ef5732.chunk.js.map": "/gthecht/subs-organizer/static/js/2.a0ef5732.chunk.js.map",
+    "index.html": "/gthecht/subs-organizer/index.html",
+    "precache-manifest.79953c865a915d75d80ee17f9d28e17c.js": "/gthecht/subs-organizer/precache-manifest.79953c865a915d75d80ee17f9d28e17c.js",
+    "service-worker.js": "/gthecht/subs-organizer/service-worker.js",
+    "static/css/main.e73ff761.chunk.css.map": "/gthecht/subs-organizer/static/css/main.e73ff761.chunk.css.map",
+    "static/js/2.a0ef5732.chunk.js.LICENSE": "/gthecht/subs-organizer/static/js/2.a0ef5732.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.daa7342e.js",
+    "static/js/2.a0ef5732.chunk.js",
+    "static/css/main.e73ff761.chunk.css",
+    "static/js/main.02740d3c.chunk.js"
+  ]
+}
