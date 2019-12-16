@@ -146,8 +146,8 @@ class SubsManager extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-headser">
-          <h1 className="title">Sort out your Subtitles</h1>
+        <header className="App-header">
+          <h1 className="title">SubZero: Sort out your Subtitles</h1>
         </header>
         <div className="input-window">
           <SubsHandler
